@@ -1,12 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/resume",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/pdf",
-      "destination": "/Aathees_Resume (2).pdf"
-    }
-  ]
+ "version": 2,
+ "builds": [{ "src": "Aathees_Resume/index.html", "use": "@vercel/static" }],
+ "routes": [{ "src": "/", "dest": "/Aathees_Resume/index.html" }]
 }
